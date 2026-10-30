@@ -86,7 +86,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: .8rem;
+  font-size: .98rem;
+  overflow-y: auto;
   box-shadow: 0 18px 40px rgba(58, 20, 64, .25);
   background-image: radial-gradient(var(--rose) 1px, transparent 1px);
   background-size: 18px 18px;
