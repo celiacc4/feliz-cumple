@@ -175,6 +175,7 @@ main {
 .secret summary::-webkit-details-marker { display: none; }
 .secret[open] .secret-body { animation: slideDown .5s ease both; }
 .secret-body { margin-top: .8rem; line-height: 1.5; }
+.secret .sign { margin-top: .6rem; font-weight: 700; font-size: 1.2rem; color: var(--pink); }
 .reasons { margin-top: .6rem; list-style: none; display: grid; gap: .3rem; }
 @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
 
