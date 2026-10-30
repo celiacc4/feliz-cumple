@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Feliz cumpleaños, Iván mi precioso! 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Capa de globos flotantes -->
+  <div id="balloons" aria-hidden="true"></div>
+  <!-- Lienzo del confeti -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main>
+    <h1 class="title">¡Feliz cumpleaños! <span class="wiggle">🎉</span></h1>
+    <p class="hint" id="hint">Toca la tarjeta para abrirla 💌</p>
+
+    <!-- Tarjeta que se abre en 3D -->
+    <section class="card-wrap">
+      <button class="card" id="card" aria-expanded="false" aria-controls="inside">
+        <div class="cover">
+          <div class="cover-front">
+            <span class="big-emoji">🎁</span>
+            <p>Para la persona<br />más especial</p>
+            <span class="tap">✨ ábreme ✨</span>
+          </div>
+          <div class="cover-back"></div>
+        </div>
+        <div class="inside" id="inside">
+          <h2>Feliz cumple, Iván mi precioso 💖</h2>
+          <p>
+            Hoy celebro el día en que llegó al mundo la persona que hace mis días más bonitos.
+            Gracias por cada risa, cada abrazo y cada aventura juntos.
+          </p>
+          <p class="sign">Te quiero muchísimo 🥰</p>
+        </div>
+      </button>
+    </section>
+
+    <!-- Tarta interactiva -->
+    <section class="cake-zone">
+      <div class="cake" id="cake" aria-label="Tarta de cumpleaños">
+        <div class="candles">
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+        </div>
+        <div class="layer top"></div>
+        <div class="layer bottom"></div>
+      </div>
+      <button class="btn" id="blow">🌬️ Sopla las velas</button>
+      <p class="wish" id="wish" hidden>¡Pide un deseo! 🌟</p>
+    </section>
+
+    <!-- Mensaje secreto desplegable -->
+    <details class="secret">
+      <summary>💌 Mensaje secreto (haz clic)</summary>
+      <div class="secret-body">
+        <p>Tengo un regalo más esperándote… pero tendrás que darme un beso para saber cuál es 😘</p>
+        <ul class="reasons">
+          <li>💫 Por tu sonrisa</li>
+          <li>🌈 Por tu forma de ver la vida</li>
+          <li>🍀 Por ser mi suerte</li>
+        </ul>
+      </div>
+    </details>
+
+    <button class="btn ghost" id="party">🎊 ¡Más confeti!</button>
+  </main>
+
+  <!-- Stickers decorativos (se pueden arrastrar) -->
+  <div class="sticker s1" draggable="false">🎈</div>
+  <div class="sticker s2" draggable="false">🧁</div>
+  <div class="sticker s3" draggable="false">💝</div>
+  <div class="sticker s4" draggable="false">🥳</div>
+  <div class="sticker s5" draggable="false">🌹</div>
+  <div class="sticker s6" draggable="false">⭐</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
